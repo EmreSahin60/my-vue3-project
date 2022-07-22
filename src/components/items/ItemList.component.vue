@@ -31,7 +31,7 @@ export default defineComponent({
       type: Boolean,
     },
   },
-  setup({ emit }) {
+  setup(example, { emit }) {
     const onItemSelect = (item: ItemInterface) => {
       emit("selectItem", item);
     };
